@@ -1,0 +1,16 @@
+# fly.toml app configuration file generated for lively-tree-5081 on 2023-05-05T22:00:23+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "lively-tree-5081"
+primary_region = "ams"
+
+[build]
+  image = "ghcr.io/vanyko/com.example.flyiodemo:latest"
+
+[http_service]
+  internal_port = 8080
+#  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
