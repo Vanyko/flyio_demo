@@ -5,6 +5,8 @@ on: [push, workflow_dispatch]
 jobs:
   autodeploy:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     env:
       FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
