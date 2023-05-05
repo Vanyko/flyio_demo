@@ -1,6 +1,6 @@
 name: autodeploy
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   autodeploy:
