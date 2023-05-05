@@ -34,7 +34,7 @@ jobs:
               --path . \
               --env "BP_JVM_VERSION=17" \
               --env "BP_NATIVE_IMAGE=true" \
-              --cache-image ghcr.io/vanyko/com.example.flyiodemo-paketo-cache-image:latest \
+#              --cache-image ghcr.io/vanyko/com.example.flyiodemo-paketo-cache-image:latest \
               --publish
       - name: Install flyctl via https://github.com/superfly/flyctl-actions
         uses: superfly/flyctl-actions/setup-flyctl@master
